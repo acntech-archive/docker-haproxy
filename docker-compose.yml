@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  acntech_haproxy:
+    build: .
+    image: acntech/haproxy:latest
+    container_name: acntech-haproxy
+    hostname: haproxy.acntech.internal
+    ports:
+      - "80:80"
+      - "443:443"
