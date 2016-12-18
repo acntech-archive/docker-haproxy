@@ -4,7 +4,7 @@ MAINTAINER Thomas Johansen "thomas.johansen@accenture.com"
 
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get -y install rsyslog
+    apt-get -y install apt-utils rsyslog
 
 
 COPY resources/49-haproxy.conf /etc/rsyslog.d/
